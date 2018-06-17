@@ -58,6 +58,8 @@
       - `$ java MainTest`    (run the test file``) - the output should say "All Test passed."
              
  
+In production, we need to do a tradeoff between running time and memory need of the app, which will decide which algo to use. I would go with Basic n^2 algo only, just because it's more flexible and scalable. Also, for bigger Ns, I will be using Long  data types instead if Integer data type, as Long can support very high range, but the only problem is console won't be able to print it properly with the correct format.
+Also for big value of Ns, the multiplication might result in overflow of Integer range, so in that case, I am just 
 
  #### Some notes about the algorithms:
     - To check if a number is prime, we only need to test for factors lower than or equal to the square root of the number being checked.
