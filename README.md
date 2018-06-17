@@ -54,6 +54,8 @@
       - `$ java Main`  (use defaults)
       - `$ java Main 20`   (change value of N to 20)
       - `$ java Main 10 2`    (change value of N to 20 and use 2nd algorithm``)
+      - `$ javac MainTest`   (compile the Test file)
+      - `$ java MainTest`    (run the test file``) - the output should say "All Test passed."
              
  
 
