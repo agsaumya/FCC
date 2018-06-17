@@ -105,7 +105,7 @@ public class Main {
 
     System.out.println(" Running Time of Algorithm to find primes : " + (endTime - startTime) );
 
-    int[][] result = new int[n+1][n+1];
+    long [][] result = new long[n+1][n+1]; // to support product of two big numbers
     int index = 0;
     result[index][index] = 1;
     index = index + 1;
@@ -121,6 +121,7 @@ public class Main {
 
     for (int i=0; i<=n ; i++) {
       for (int j =0; j<= n; j++) {
+
         result[i][j] = result[i][0] * result[0][j];
 
         System.out.print("   " + String.format("|%8d|", result[i][j])); // formatting the output cell
