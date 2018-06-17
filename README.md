@@ -56,7 +56,9 @@
       - `$ java Main 10 2`    (change value of N to 20 and use 2nd algorithm``)
       - `$ javac MainTest`   (compile the Test file)
       - `$ java MainTest`    (run the test file``) - the output should say "All Test passed."
-             
+         
+Testing : I wrote my tests using JUnit, but somehow was not able to run them through console (JUnit jar was not found by my Mac terminal), so I changed it to be able to run as a regular java application here. MainTest.java has all the tests.  
+(Code Coverage : 100% on class and methods and 97% on branch and line converage)
  
 In production, we need to do a tradeoff between running time and memory need of the app, which will decide which algo to use. I would go with Basic n^2 algo only, just because it's more flexible and scalable. Also, for bigger Ns, I will be using Long  data types instead if Integer data type, as Long can support very high range, but the only problem is console won't be able to print it properly with the correct format.
 Also for big value of Ns, the multiplication might result in overflow of Integer range, so in that case, I am just 
